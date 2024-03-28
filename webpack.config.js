@@ -8,6 +8,17 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
   },
+  devServer: {
+    static: {
+      directory: path.resolve(__dirname, "dist"),
+    },
+    port: 10341,
+    open: true,
+    hot: true,
+    compress: true,
+    historyApiFallback: true,
+    watchFiles: ["src/**/*"],
+  },
   module: {
     rules: [
       {
