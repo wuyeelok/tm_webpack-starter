@@ -93,7 +93,7 @@
     "webpack-cli": "^5.1.4"
   },
   "scripts": {
-    "build": "webpack --mode production"
+    "build": "webpack"
   },
   "author": "Kenneth",
   "license": "MIT"
